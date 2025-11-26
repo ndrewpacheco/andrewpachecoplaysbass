@@ -15,8 +15,83 @@
 
   <!-- Bootstrap core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+h1, h2, h3, .fw-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+a {
+  color: #d4a373; /* Gold accent */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #ffcb74;
+}
+
+.lead {
+  color: #bbbbbb;
+}
+
+.container, footer {
+  color: #dddddd;
+}
+
+.album {
+  background-color: #181818;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border: none;
+  color: #dcdcdc;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card-body {
+  font-size: 1rem;
+}
+
+.video-dimensions {
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #121212;
+}
+
+.btn-primary {
+  background-color: #d4a373;
+  border-color: #d4a373;
+}
+
+.btn-primary:hover {
+  background-color: #ffcb74;
+  border-color: #ffcb74;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -43,38 +118,7 @@
 
 <body>
 
-  <header>
-    <!-- <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div> -->
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
-          <strong>Andrew Pacheco - Bassist</strong>
 
-        </a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
-      </div>
-    </div>
-  </header>
 
   <main>
 
@@ -83,7 +127,7 @@
 
         <div class="col-lg-6 col-md-8 mx-auto">
 
-          <h1 class="fw-light">Need a bassist?</h1>
+          <h1 class="fw-light">Andrew Pacheco - Bassist</h1>
 
           <p class="lead text-muted">18+ years of perfomance experience with a multitude of artists from Toronto and
             around the world</p>
@@ -100,7 +144,7 @@
       </div>
     </section>
 
-    <div class="album py-5 bg-light">
+    <div class="album py-5">
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-2 g-5">
           <div class="col">
@@ -117,6 +161,21 @@
 
           <div class="col">
             <div class="card shadow-sm">
+              <iframe class="video-dimensions " src="https://www.youtube.com/embed/vqMgjVrGQ9Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              <div class="card-body">
+                <p class="card-text">Constelação (João Leão, Tika, Kika, Igor Caracas)</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+                    <div class="col">
+            <div class="card shadow-sm">
               <iframe class="video-dimensions " src="https://www.youtube.com/embed/xxtC0Zo-WFY"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -126,18 +185,17 @@
               </div>
             </div>
           </div>
-          <div class="col">
+                    <div class="col">
             <div class="card shadow-sm">
-              <iframe class="video-dimensions " src="https://www.youtube.com/embed/9ac3xKsTxJk"
+              <iframe class="video-dimensions " src="https://www.youtube.com/embed/3zA_L6hP9ac"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
               <div class="card-body">
-                <p class="card-text">Joao Leao Bossa Quartet at Jazz Bistro</p>
+                <p class="card-text">Tamar Ilana & Ventanas at Small World Music</p>
               </div>
             </div>
           </div>
-
                   <div class="col">
           <div class="card shadow-sm">
             <iframe class="video-dimensions " src="https://www.youtube.com/embed/Rw9QXUxxiAw"
@@ -150,30 +208,14 @@
           </div>
         </div>
 
-          <div class="col">
-            <div class="card shadow-sm">
-              <iframe class="video-dimensions " src="https://www.youtube.com/embed/3zA_L6hP9ac"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <div class="card-body">
-                <p class="card-text">Tamar Ilana & Ventanas at Small World Music</p>
-              </div>
-            </div>
-          </div>
 
 
-          <div class="col">
-            <div class="card shadow-sm">
-              <iframe class="video-dimensions " src="https://www.youtube.com/embed/vqMgjVrGQ9Y"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <div class="card-body">
-                <p class="card-text">Constelação (João Leão, Tika, Kika, Igor Caracas)</p>
-              </div>
-            </div>
-          </div>
+
+
+
+
+
+
 
 
           <div class="col">
@@ -199,19 +241,9 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <iframe class="video-dimensions " src="https://www.youtube.com/embed/7XW3Dz4mCFw"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-            <div class="card-body">
-              <p class="card-text">Bass Jam with Rockyard</p>
-            </div>
-          </div>
-        </div>
 
-                  <div class="col">
+
+          <div class="col">
             <div class="card shadow-sm">
               <iframe class="video-dimensions " src="https://www.youtube.com/embed/9-g-68CUM8w"
                 title="YouTube video player" frameborder="0"
